@@ -3,6 +3,18 @@
         "id": 1,
         "product_name": "Capsicum",
         "quantity": 0,
-        "img_link": "https://..."
+        "img_link": ["../public/images/hybrid-capsicum.png"]
+    },
+    {
+        "id": 2,
+        "product_name": "Beetroot",
+        "quantity": 0,
+        "img_link": ["../public/images/beetroot.png"]
+    },
+    {
+        "id": 3,
+        "product_name": "Shak Combo",
+        "quantity": 0,
+        "img_link": ["../public/images/shak-combo1.png", "../public/images/shak-combo2.png", "../public/images/shak-combo3.png", "../public/images/shak-combo4.png", "../public/images/shak-combo5.png", "../public/images/shak-combo6.png"]
     }
 ]
