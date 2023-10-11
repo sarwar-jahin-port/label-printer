@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "product_name": "Capsicum",
+        "product_name": "Hybrid Capsicum",
         "quantity": 0,
         "img_link": ["../public/images/hybrid-capsicum.png"]
     },
@@ -16,5 +16,47 @@
         "product_name": "Shak Combo",
         "quantity": 0,
         "img_link": ["../public/images/shak-combo1.png", "../public/images/shak-combo2.png", "../public/images/shak-combo3.png", "../public/images/shak-combo4.png", "../public/images/shak-combo5.png", "../public/images/shak-combo6.png"]
+    },
+    {
+        "id": 4,
+        "product_name": "Hybrid Capsicum Seed 15 Seed For Roof Gardening Green and Red fruit seed",
+        "quantity": 0,
+        "img_link": ["../public/images/hybrid-capsicum.png"]
+    },
+    {
+        "id": 5,
+        "product_name": "Undefeated flower Seeds aparajita flower Seeds 20 pcs",
+        "quantity": 0,
+        "img_link": ["../public/images/aparajita-flower.png"]
+    },
+    {
+        "id": 6,
+        "product_name": "Sunflower 20 pcs Hybrid Seed All Season",
+        "quantity": 0,
+        "img_link": ["../public/images/sunflower.png"]
+    },
+    {
+        "id": 7,
+        "product_name": "ball squash Seeds 10 Pcs",
+        "quantity": 0,
+        "img_link": ["../public/images/ball-squash.png"]
+    },
+    {
+        "id": 8,
+        "product_name": "Chinese Long Black Eggplant seeds 40 pcs",
+        "quantity": 0,
+        "img_link": ["../public/images/chinese-long-black-eggplant.png"]
+    },
+    {
+        "id": 9,
+        "product_name": "Orange Gold Chinese Cabbage Seeds 50 Pcs",
+        "quantity": 0,
+        "img_link": ["../public/images/orange-gold-chinese-cabbage.png"]
+    },
+    {
+        "id": 10,
+        "product_name": "Chinese Green Yellow Cabbage Seeds 50 Pcs",
+        "quantity": 0,
+        "img_link": ["../public/images/chinese-green-yellow-cabbage.png"]
     }
 ]

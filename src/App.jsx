@@ -17,7 +17,7 @@ function App() {
   const handleChange = (id, value) => {
     const updatedProducts = products.map((product) => {
       if (product.id === id) {
-        return { ...product, quantity: value };
+        return { ...product, quantity: Number(value) };
       }
       return product;
     });
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-      <div className='grid grid-cols-3 gap-20'>
+      <div className='grid grid-cols-3'>
         <div className={`left-width ${print ? "hidden" : "block"}`}>
           <div className='text-center'>
             <button onClick={()=>setPage(!page)} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Page Toggle</button>
@@ -60,23 +60,35 @@ function App() {
             </form>
           </div>
         </div>
-        <div className={`right-width col-span-2 border ${page ? 'a4' : 'a5'} flex flex-wrap gap-2 pl-4`}>
-          {
-            products.map((product) =>
-              Array.from({ length: product.quantity }).map((_, index) => (
-                <>
-                  {product.img_link.map((img_link, imgIndex) => (
+        <div className={`right-width col-span-2 border ${page ? 'a4 grid grid-cols-5 gap-0' : 'a5'}`}>
+          {/* {
+            products.map((product) => {
+              const images = [];
+              for (let i = 0; i < product.quantity; i++) {
+                product.img_link.forEach((img_link, index) => {
+                  images.push(
                     <img
                       className='w-[138px] h-[159px]'
-                      key={imgIndex}
+                      key={index}
                       src={img_link}
                       alt=""
                     />
-                  ))}
-                </>
-              ))
-            )
-          }
+                  );
+                });
+              }
+              return images;
+            })
+          } */}
+          <div className="w-[138px] h-[159px] border">1</div>
+          <div className="w-[138px] h-[159px] border">2</div>
+          <div className="w-[138px] h-[159px] border">3</div>
+          <div className="w-[138px] h-[159px] border">4</div>
+          <div className="w-[138px] h-[159px] border">5</div>
+          <div className="w-[138px] h-[159px] border">1</div>
+          <div className="w-[138px] h-[159px] border">2</div>
+          <div className="w-[138px] h-[159px] border">3</div>
+          <div className="w-[138px] h-[159px] border">4</div>
+          <div className="w-[138px] h-[159px] border">5</div>
         </div>
       </div>
     </>
