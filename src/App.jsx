@@ -60,15 +60,15 @@ function App() {
             </form>
           </div>
         </div>
-        <div className={`right-width col-span-2 border ${page ? 'a4 grid grid-cols-5 gap-0' : 'a5'}`}>
-          {/* {
+        <div className={`right-width col-span-2 border ${page ? 'a4 flex flex-wrap-reverse gap-2 mt-[0.1in] ml-[0.1in]' : 'a5 flex flex-wrap-reverse gap-2 mt-[0.1in] ml-[0.1in]'}`}>
+          {
             products.map((product) => {
               const images = [];
               for (let i = 0; i < product.quantity; i++) {
                 product.img_link.forEach((img_link, index) => {
                   images.push(
                     <img
-                      className='w-[138px] h-[159px]'
+                      className='w-[3.3cm] h-[4cm]'
                       key={index}
                       src={img_link}
                       alt=""
@@ -78,17 +78,7 @@ function App() {
               }
               return images;
             })
-          } */}
-          <div className="w-[138px] h-[159px] border">1</div>
-          <div className="w-[138px] h-[159px] border">2</div>
-          <div className="w-[138px] h-[159px] border">3</div>
-          <div className="w-[138px] h-[159px] border">4</div>
-          <div className="w-[138px] h-[159px] border">5</div>
-          <div className="w-[138px] h-[159px] border">1</div>
-          <div className="w-[138px] h-[159px] border">2</div>
-          <div className="w-[138px] h-[159px] border">3</div>
-          <div className="w-[138px] h-[159px] border">4</div>
-          <div className="w-[138px] h-[159px] border">5</div>
+          }
         </div>
       </div>
     </>
